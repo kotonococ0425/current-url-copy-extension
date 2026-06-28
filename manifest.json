@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Current URL Copier",
+  "version": "1.1.0",
+  "description": "Copies the current tab URL with Shift+Command+C.",
+  "permissions": ["activeTab", "clipboardWrite", "offscreen", "scripting", "tabs"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "copy-current-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copy current tab URL"
+    }
+  },
+  "action": {
+    "default_title": "Copy current URL"
+  }
+}
